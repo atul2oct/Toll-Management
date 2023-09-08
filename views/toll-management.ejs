@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Toll Management</title>
+</head>
+<body>
+    <h2>Toll Management</h2>
+    <form action="/check_vehicle" method="post">
+        <label for="regNumber">Vehicle Registration Number:</label>
+        <input type="text" name="regNumber" id="regNumber" required><br><br>
+
+        <label for="toll">Select Toll:</label>
+        <select name="toll" id="toll">
+            <!-- Populate the dropdown with toll options -->
+        </select><br><br>
+
+        <label for="booth">Select Booth:</label>
+        <select name="booth" id="booth">
+            <!-- Populate the dropdown with booth options for the selected toll -->
+        </select><br><br>
+
+        <button type="submit">Check Vehicle</button>
+    </form>
+    <div>
+        <p><%= message %></p>
+    </div>
+</body>
+</html>
